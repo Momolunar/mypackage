@@ -71,5 +71,37 @@ def merge_sort(items):
     return linear_merge(list1,list2)
 
 def quick_sort(items):
+    '''
+    Return array of items, sorted in ascending order
+    Args:
+        items (array): list or array-like object containing numerical values or strings.
 
-    '''Return array of items, sorted in ascending order'''
+    Returns:
+        array: array of items, in ascending order.
+
+    Examples:
+        >>> quick_sort(['patch', 'tour', 'yak', 'zombie', 'egg', 'stall'])
+        ['egg', 'patch', 'stall', 'tour', 'yak', 'zombie']
+
+        >>> merge_sort([25, 1, 36, 100, 12, 5])
+        [1, 5, 12, 25, 36, 100]
+    '''
+
+    if len(items)<=1:
+        return items
+    idx = 0
+    left = []
+    right = []
+    pivot = []
+    for i in range(len(items)):
+        if items[i] < items[idx]:
+            left.append(items[i])
+        elif items[i] > items[idx]:
+            right.append(items[i])
+        elif items[i] == items[idx]:
+            pivot.append(items[idx])
+
+    left = quick_sort(left)
+    right = quick_sort(right)
+
+    return left + pivot + right
