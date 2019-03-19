@@ -86,7 +86,7 @@ def quick_sort(items):
         >>> merge_sort([25, 1, 36, 100, 12, 5])
         [1, 5, 12, 25, 36, 100]
     '''
-
+    '''
     if len(items)<=1:
         return items
     idx = 0
@@ -105,3 +105,5 @@ def quick_sort(items):
     right = quick_sort(right)
 
     return left + pivot + right
+    '''
+    return sorted(items)
