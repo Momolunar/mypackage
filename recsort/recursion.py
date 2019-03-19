@@ -58,10 +58,10 @@ def factorial(n):
         3628800
 
     '''
-    if n == 0:
+    if n <= 0:
         return 1
     elif n == 1:
-        return n
+        return 1
     else:
         return n * factorial(n-1)
 
