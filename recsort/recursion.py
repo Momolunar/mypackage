@@ -17,7 +17,7 @@ def sum_array(array):
     else:
         return array[len(array)-1]+sum_array(array[:len(array)-1])
 
-def fibonaccii(n):
+def fibonacci(n):
     '''
     Return nth term in fibonnaci sequence
 
