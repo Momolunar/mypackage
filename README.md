@@ -11,15 +11,17 @@ RecSort is a python library package that contains the following functions:
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install recsort.
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install mypackage.
 ```bash
-pip install recsort
+pip install --upgrade git+https://github.com/momolunar/mypackage.git
+pip install --upgrade git+https://github.com/momolunar/mypackage.git #to install a later version
 ```
 
 ## Usage
 ```python
-import recsort
+from recsort.recursion import sum_array, fibonacci, factorial, reverse
+from recsort.sorting import bubble_sort, merge_sort, quick_sort
 
-recsort.merge_sort([10, 100, 5, 12, 55]) # returns [5, 10, 12, 55, 100]
-recsort.factorial(5) # returns 120
-recsort.fibonacci(14) # returns 377
+merge_sort([10, 100, 5, 12, 55]) # returns [5, 10, 12, 55, 100]
+factorial(5) # returns 120
+fibonacci(14) # returns 377

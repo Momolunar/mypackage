@@ -1,4 +1,4 @@
-from mypackage import myFunction
+from recsort import myFunction
 
 def test_top_n():
     """

@@ -1,9 +1,9 @@
 README.md
 setup.py
-mypackage/__init__.py
-mypackage/myModule.py
-mypackage/recursion.py
-mypackage/sorting.py
+recsort/__init__.py
+recsort/myModule.py
+recsort/recursion.py
+recsort/sorting.py
 recsort.egg-info/PKG-INFO
 recsort.egg-info/SOURCES.txt
 recsort.egg-info/dependency_links.txt

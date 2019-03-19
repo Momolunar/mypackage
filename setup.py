@@ -8,7 +8,7 @@ setup(
     description='EDSA python recursion and sorting package',
     long_description=open('README.md').read(),
     install_requires=['numpy'],
-    url='https://github.com/momolunar/mypackage',
+    url='https://github.com/momolunar/recsort',
     author='Monde Colephi',
     author_email='<mondelunar@gmail.com>'
 )
